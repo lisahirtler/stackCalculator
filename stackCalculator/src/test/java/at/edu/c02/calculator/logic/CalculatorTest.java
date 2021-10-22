@@ -85,4 +85,21 @@ public class CalculatorTest {
 		}
 
 	}
+
+	@Test
+	public void testModulo()
+	{
+		Calculator calc = new CalculatorImpl();
+		try
+		{
+			calc.push(2);
+			calc.push(2);
+			//calc.perform(Operation.mod);
+
+		} catch (Exception e)
+		{
+			assertEquals("kein Modulo", e.getMessage());
+		}
+	}
+
 }
